@@ -20,7 +20,7 @@ Si google no tiene la respuesta, capaz que chatgpt.
  * para entender el tema de los colores y estilos de las letras en la consola lean el siguiente articulo:
  https://python-para-impacientes.blogspot.com/2016/09/dar-color-las-salidas-en-la-consola.html
 
-Entrega: 30 de julio, por classroom, con nombre de integrantes del grupo y que me aclaren cuales son las palabras 
+Entrega: 16 de agogsto, por classroom, con nombre de integrantes del grupo y que me aclaren cuales son las palabras 
          que elijieron que tienen color
 """
 
