@@ -59,7 +59,7 @@ while not is_over:
         print(h, end="")
     print()
     hints = [" _ " for i in range(len(word))]
-    guess = input("Adivina la palabra: \033[94m")
+    guess = input("Adivina la palabra: \033[4;94m")
     print("\033[0m")
     
     # por aca deberia saltar el error si tiene letras de mas o menos, pista: usar palabra clave continue
