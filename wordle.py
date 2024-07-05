@@ -1,8 +1,20 @@
 """
-As a creative thing
-- I put color helps as well and the user input is blue
-- It chooses a random word from a file
- 
+Pautas con los puntajes
+
+- guardar la informacion del archivo palabras.txt en la lista words y agregar 10 palabras al archivo (3)
+- Debe saltar un error cuando ingresas letras de mas o menos, SIN QUE SE CORTE EL JUEGO (2)
+- El jugador debe ver todo en español (1)
+- Incrementar la variable count despues de cada intento (1)   
+- cuando termine el juego, que muestre la palabra adivinada (2)    
+- adaparlo al gusto de ustedes o que avise cuantas letras tiene la palabra (1)
+
+tips para los proyectos y para la vida:
+
+Empiecen por las cosas que si entienden.
+El que mucho abraza, poco aprieta.
+No se ahoguen en un vaso de agua.
+Al final del tunel hay humeda ... o era luz ?
+
 """
 
 import os, time, random
@@ -13,44 +25,47 @@ if os.name == "nt":
 else:
     clear = "clear"
 
-words = []
-with open("words.txt", "r") as f:
-    for l in f:
-        try:
-            words.append(l.split()[0])
-        except:
-            pass
-word = words[random.randint(0, len(words))]
+words = ["perro","gasto","gatos","leche","termo"]
+
+
+###
+### Aca se debe leer el archivo palabras.txt 
+### mientras lo va leyendo, debe ir guardando las palabras en la lista words
+###
+
+word = words[random.randint(0, len(words)-1)] # elije la palabra aleatoriamente
 hints = [" _ " for i in range(len(word))]
 old_hints = []
 is_over = False
 count = 0
 
+# mientras no se acaba
 while not is_over:
-    os.system(clear)
-    print(f"Welcome to the word game\nGuesses: {count}")
+    # Logica epica del juego
+    
+    os.system(clear) # borra todo en consola
+    print(f"Adivina la Palabra \nGuesses: {count}")
     for i, h in enumerate(old_hints):
         if i % len(word) == len(word)-1 and i > 0:
             print(h)
         else:
             print(h, end="")
     
-    print(f"\nlast hint is", end="")
+    print(f"\nTu ultima adivinanza fue ", end="")
     for h in hints:
         print(h, end="")
     print()
     hints = [" _ " for i in range(len(word))]
-    guess = input("make a guess: \033[94m")
+    guess = input("Adivina la palabra: \033[94m")
     print("\033[0m")
-    count += 1
-    if len(guess) != len(word):
-        print(f"the guess must be have {len(word)} letters")
-        time.sleep(1.5)
-        continue
     
+    # por aca deberia saltar el error si tiene letras de mas o menos, pista: usar palabra clave continue
+
     if guess.lower() == word:
         is_over = True
-    
+        continue
+
+    # colorea letras de acuerdo a 
     for i, l in enumerate(guess):        
         if l in word:
             if word[i] == guess[i]:
@@ -61,5 +76,5 @@ while not is_over:
             hints[i] = " \033[91m"+l.lower()+"\033[0m "
         old_hints.append(hints[i])
     
-
-print(f"The word was: \033[92m{word}\033[0m good job, it took you {count} guesses ")
+    
+print(f"La palabra era: (mostrar palabra) GOOD JOB !!, te llevó {count} adivinanzas ")
