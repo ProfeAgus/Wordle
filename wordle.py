@@ -45,7 +45,7 @@ while not is_over:
     # Logica epica del juego
     
     os.system(clear) # borra todo en consola
-    print(f"Adivina la Palabra \nGuesses: {count}")
+    print(f"Guess the word \nGuesses: {count}")
     for i, h in enumerate(old_hints):
         if i % len(word) == len(word)-1 and i > 0:
             print(h)
