@@ -2,7 +2,7 @@
 Pautas con los puntajes
 
 - guardar la informacion del archivo palabras.txt en la lista words y agregar 10 palabras al archivo (3)
-- Debe saltar un error cuando ingresas letras de mas o menos, SIN QUE SE CORTE EL JUEGO (2)
+- No debe permitir que se ingrese adivinanzas que tengan letras de más o de menos, SIN QUE SE CORTE EL JUEGO (2)
 - El jugador debe ver todo en español y que haya por lo menos una palabra más que tenga color (1)
 - que el acumulador de cuantos intentos incremente despues de cada adivinanza (1)   
 - cuando termine el juego, que muestre la palabra adivinada (2)    
