@@ -6,15 +6,16 @@ Pautas con los puntajes
 - El jugador debe ver todo en español (1)
 - Incrementar la variable count despues de cada intento (1)   
 - cuando termine el juego, que muestre la palabra adivinada (2)    
-- adaparlo al gusto de ustedes o que avise cuantas letras tiene la palabra (1)
+- adaparlo al gusto de ustedes o que avise cuantas letras tiene la palabra durante el juego (1)
 
-tips para los proyectos y para la vida:
-
+--------------------------------------------------
+tips para proyectos de programación y para la vida:
+--------------------------------------------------
 Empiecen por las cosas que si entienden.
 El que mucho abraza, poco aprieta.
-No se ahoguen en un vaso de agua.
-Al final del tunel hay humeda ... o era luz ?
-
+no te ahogues en un vaso de agua.
+Si google no tiene la respuesta, capaz que chatgpt.
+ 
 """
 
 import os, time, random
