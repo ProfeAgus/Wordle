@@ -4,9 +4,9 @@ Pautas con los puntajes
 - guardar la informacion del archivo palabras.txt en la lista words y agregar 10 palabras al archivo (3)
 - Debe saltar un error cuando ingresas letras de mas o menos, SIN QUE SE CORTE EL JUEGO (2)
 - El jugador debe ver todo en español (1)
-- Incrementar la variable count despues de cada intento (1)   
+- que el acumulador de cuantos intentos incremente despues de cada adivinanza (1)   
 - cuando termine el juego, que muestre la palabra adivinada (2)    
-- adaparlo al gusto de ustedes o que avise cuantas letras tiene la palabra durante el juego (1)
+- que avise cuantas letras tiene la palabra durante el juego o cambiar el subrayado del input del jugador por otro estilo* (1)
 
 --------------------------------------------------
 tips para proyectos de programación y para la vida:
@@ -15,7 +15,9 @@ Empiecen por las cosas que si entienden.
 El que mucho abraza, poco aprieta.
 no te ahogues en un vaso de agua.
 Si google no tiene la respuesta, capaz que chatgpt.
- 
+
+ * para entender el tema de los colores y estilos de las letras en la consola lean el siguiente articulo:
+ https://python-para-impacientes.blogspot.com/2016/09/dar-color-las-salidas-en-la-consola.html
 """
 
 import os, time, random
